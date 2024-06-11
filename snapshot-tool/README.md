@@ -1,11 +1,11 @@
-# INSTALL:
+## Install
 
 npm install
 
-# USAGE:
+## Usage
 
 node scripts/phx-snapshot.js
 
-# RESULTING SNAPSHOT FILE:
+### Resulting snapshot file
 
 snapshot.phx.[CURRENT-DATE].json
