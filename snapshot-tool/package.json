@@ -1,0 +1,20 @@
+{
+  "name": "phx-raffle-snapshotter-v1",
+  "version": "1.0",
+  "description": "PHX Raffle snapshotter V1",
+  "dependencies": {},
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "ethers": "^5.5.1"
+  },
+  "scripts": {
+  },
+  "repository": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  },
+  "homepage": ""
+}
