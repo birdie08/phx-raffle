@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>PHXVerse monthly raffle</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="PHXVerse monthly raffle">
+		<meta name="keywords" content="PHXVerse,monthly,raffle">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans:300,400,500,600,700,800,900|Montserrat:300,400,500,600,700,800,900">
+		<meta property="og:title" content="PHXVerse monthly raffle" /> 
+    	<meta property="og:url" content="https://undefined" /> 
+    	<meta property="og:image" content="https://undefined" />
+		<link rel="stylesheet" type="text/css" href="normalize.css?v1.0" />
+		<link rel="stylesheet" type="text/css" href="animate.min.css?v1.0" />
+		<link rel="stylesheet" type="text/css" href="fontawesome/fontawesome.css?v1.0" />				
+		<link rel="stylesheet" type="text/css" href="style.css?v1.0" />
+	</head>
+
+	<body id="body">
+
+		
+		<div id="bgimage"></div>
+
+
+		<div id="wrapper">
+			<div id="page">
+				<h1 class="red">
+					<img id="bird" src="phx.svg">
+					<div id="header"> PHXVerse monthly raffle</div>
+				</h1>
+
+				<div id="left">
+					<fieldset>
+						<legend class="blue">
+							Settings
+						</legend>
+						
+						<div>
+							<div class="entry">
+								View an old raffle: <br />
+								<select id="raffleselect" onchange="loadRaffle()">
+									<option value="null">No old raffles yet</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="entry">
+							Upload snapshot file: <br />
+							<input type="file" id="snapshot" name="snapshot" accept="text" onchange="loadfile(event)">
+						</div>
+
+						<div class="entry">
+							CFX needed per one ticket: <br />
+							<input class="inputtext" type="text" id="cfxper" placeholder="100" /> 
+						</div>
+
+						<div class="entry">
+							How many winners? <br />
+							<input class="inputtext" type="text" id="winners" placeholder="5" />
+						</div>
+
+						<div class="entry">
+							Date <br />
+							<input class="inputtext" type="text" id="date" disabled="disabled" />
+							<!-- <textarea id="txt" disabled=disabled></textarea> -->
+						</div>
+						
+						<div>
+							<div id="startRaffle" class="button" onclick="javascript:startRaffle()">🎲 Start Raffle</div>
+							<div id="signRaffle" class="button bgreen hidden" onclick="javascript:sign()">✍️ Sign & Save Raffle Results</div>
+							<div id="viewSignature" class="button hidden" onclick="javascript:viewSignature()">🔍 View Raffle Signature</div>
+							<a id="dlsnapshot" class="button hidden" href=""><i class="fa-solid fa-download"></i> Download Snapshot File</a>
+						</div>
+					</fieldset>
+				</div>
+				<div id="mid">
+					<br />
+				</div>
+				<div id="right">
+					<fieldset>
+						<legend class="green">
+							Results
+						</legend>
+						<span id="winnersresult" class="green">
+							No results yet
+						</span>
+					</fieldset>
+				</div>
+				
+				<div class="clearfix"></div>
+				<br />
+
+				<div id="raffle_active">
+					<fieldset>
+						<legend class="green">
+							🎲 Raffle
+						</legend>
+						<div id="result">Not started</div>
+					</fieldset>
+				</div>
+			</div>
+	  	</div>
+
+		<div id="modal">
+			<div id="modalclose" onclick="javascript:closeModal()">x</div>
+
+			<div id="modalwrap">
+				<div id="modaltxt"></div>
+			</div>
+		</div>
+
+		<!-- load javascript -->
+		<script type="text/javascript" src="ethers.min.js?v1.0"></script>
+		<script type="text/javascript" src="app.js?v1.0"></script>
+
+	</body>
+
+</html>

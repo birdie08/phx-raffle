@@ -1,0 +1,254 @@
+body {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px #FFFFFF;
+}
+
+#bgimage {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 10;
+    background-image: url("phxnew_bird.webp");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#wrapper {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    min-width: 90vw;
+    min-height: 100vh;
+}
+
+#bird {
+    position: absolute;
+    height: 4rem;
+    top: 1rem;
+}
+
+h1 {
+    font-family: "Montserrat", "Noto Sans", Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+#header {
+    padding-left: 7.5rem;
+    padding-top: 1.2rem;
+}
+
+fieldset {
+    border-radius: 0.5rem;
+    background-color: rgba(255,255,255,0.4);
+}
+
+textarea {
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+#result {
+    overflow-y: scroll;
+    max-height: 40vh;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    padding-bottom: 0.7rem;
+    background-color: rgb(0, 140, 255);
+    color: #fff;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    text-shadow: none;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.button:hover {
+    background-color: rgb(50, 180, 255);
+}
+
+.button.bgreen {
+    background-color: rgb(12, 172, 12);
+}
+.button.bgreen:hover {
+    background-color: rgb(99, 211, 48);
+}
+
+.entry {
+    display: inline-block;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 100%;
+    width: 240px;
+    overflow: hidden;
+}
+
+.inputtext {
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    border: 1px solid #333;
+}
+
+.grey {
+    color: rgb(31, 31, 31);
+}
+
+.green {
+    color: rgb(8, 92, 8);
+}
+
+.red {
+    color: rgb(141, 17, 17);
+}
+
+.blue {
+    color: rgb(18, 56, 138);
+}
+
+legend {
+    background-color: rgba(255,255,255,0.6);
+    font-weight: 800;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #888;
+}
+
+legend {
+    color: rgb(85, 85, 85);
+}
+
+legend.green {
+    color: rgb(12, 139, 12);
+}
+
+legend.red {
+    color: rgb(204, 19, 19);
+}
+
+legend.blue {
+    color: rgb(26, 86, 216);
+}
+
+#left {
+    max-width: 49.5%;
+    width: 49.5%;
+    float:left;
+}
+#mid {
+    max-width: 1%;
+    width: 1%;
+    float: left;
+}
+#right {
+    max-width: 49.5%;
+    width: 49.5%;
+    float:left;
+}
+.hidden {
+    display: none;
+}
+
+#modal {
+    display: none;
+    position: fixed; 
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(44, 44, 44, 0.7);
+}
+
+#modalwrap {
+    position: fixed; 
+    width: 60vw;
+    height: 60vh;
+    top: 20vh;
+    left: 20vw;
+    background-color: white;
+    color: #666;
+    border-radius: 1rem;
+        
+}
+
+#modal.show {
+    display: block;
+    z-index: 1000;
+}
+
+#modalwrap {
+    width: 60vw;
+    height: 60vh;
+    overflow: scroll;
+}
+
+#modaltxt {
+    padding: 1vw 2vw;
+    width: 100%;
+}
+
+#modaltxt div, 
+#modaltxt span {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    color: rgb(18, 56, 138);
+}
+
+#modaltxt div {
+    padding-bottom: 1.5rem;
+}
+
+
+#modaltxt pre {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+}
+
+#modalclose {
+    position: fixed;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    top: 1rem;
+    right: 1rem;
+    color: rgb(233, 233, 233);
+    border-radius: 0.5rem;
+    z-index: 2000;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#modalclose:hover {
+    color: white;
+}
